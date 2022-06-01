@@ -140,7 +140,7 @@ int main(){
 	//Finaliza el programa cuando se presiona una tecla #include <conio.h>
 	//getch();	
 	//Finaliza el programa cuando se presiona una tecla #include <stdlib.h>
-	system("pause");
+	//system("pause");
 	
 	return 0;
 }

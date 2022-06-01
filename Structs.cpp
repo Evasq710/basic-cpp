@@ -81,6 +81,6 @@ int main(){
         cout<<empleados[i].salario<<endl;
 	}
 
-	system("PAUSE");
+	//system("PAUSE");
 	return 0;
 }

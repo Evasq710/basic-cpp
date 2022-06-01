@@ -1,5 +1,5 @@
 #include <iostream>
-#include <conio.h>
+//#include <conio.h>
 #include <string>
 
 using namespace std;
@@ -55,7 +55,7 @@ int main(){
 	persona1.nombre = "Elias Vasquez";
 	mostrarStruct(persona1);
 	
-	getch();
+	//getch();
 	return 0;
 }
 

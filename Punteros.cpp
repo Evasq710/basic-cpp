@@ -1,5 +1,4 @@
 #include <iostream>
-#include <conio.h>
 #include <string>
 using namespace std;
 
@@ -22,22 +21,22 @@ struct Persona{
 
 int main(){
 	int num, *puntero_dir_num;
-	
+
 	num = 20;
 	puntero_dir_num = &num;
-	
+
 //	cout << "Numero: " << num << endl;
 //	cout << "Direccion de memoria: " << &num << endl;
 	cout << "Numero: " << *puntero_dir_num << endl;
 	cout << "Direccion de memoria: " << puntero_dir_num << endl;
-	
-	
+
+
 	// === CORRESPONDENCIA ENTRE ARRAYS Y PUNTEROS ===
-	
+
 	int numeros[] = {2, 4, 6, 8, 10};
 //	int *dir_numeros = &numeros[0]; // Dir de memoria del primer elemento, ya que se almacenan de manera contigua
 	int *dir_numeros = numeros; // Esto es lo mismo que lo anterior, la dir del primer elemento
-	
+
 	for(int i = 0; i < 5; i++){
 		cout << "Posicion de memoria del elemento del vector[" << i << "]: " << dir_numeros;
 		cout << ", elemento guardado: " << *dir_numeros << endl;
@@ -48,8 +47,8 @@ int main(){
 		SOLUCIÓN: *(dir_numeros + i)
 		*/
 	}
-	
-	
+
+
 	/*
 		=== ASIGNACIÓN DINAMICA DE ARREGLOS ===
 		new: reserva el número de bytes solicitados por la declaración
@@ -66,8 +65,8 @@ int main(){
 		cout << calificaciones[i] << " ";
 	}
 	delete[] calificaciones; // Liberando el espacio de memoria
-	
-	
+
+
 	// === TRANSMISIÓN DE DIRECCIONES DE MEMORIA MEDIANTE PUNTEROS ===
 	float num1 = 234.4, num2 = 34.2;
 	cout << "\n\nPrimer numero: " << num1 << endl;
@@ -75,15 +74,15 @@ int main(){
 	intercambio(&num1, &num2); // Enviando las direcciones para que se guarden en los punteros de la funcion
 	cout << "Nuevo valor de Primer numero: " << num1 << endl;
 	cout << "Nuevo valor de Segundo numero: " << num2 << endl;
-	
-	
+
+
 	// === TRANSMISIÓN DE ARRAYS MEDIANTE PUNTEROS ===
 	int numbers[] = {1, 2, 3, 4, 5, 10, 9, 8, 7, 6};
 	int sizeArr = 10;
 	int maximo = hallarMaximo(numbers, sizeArr);
 	cout << "\nPasando un array como puntero, el mayor elemento es el " << maximo << endl;
-	
-	
+
+
 	// === MATRIZ DINÁMICA (PUNTERO DE PUNTEROS) ===
 	int **punteroMatriz, filas = 3, columnas = 4;
 	punteroMatriz = new int*[filas]; // Reservando espacio para un array de punteros
@@ -109,40 +108,39 @@ int main(){
 		delete[] *(punteroMatriz + i);
 	}
 	delete[] punteroMatriz;
-	
-	
+
+
 	// === PUNTEROS A STRUCTS ===
 	punteroPersona->nombre = "Elias";
 	punteroPersona->edad = 20;
 	cout<<"\nDatos de un struct guardados con un puntero: "<<endl;
 	cout << punteroPersona->nombre << endl;
 	cout << punteroPersona->edad << endl;
-	
-	getch();
+
 	return 0;
 }
 
 void intercambio(float *dir_num1, float *dir_num2){
 	float aux;
-	
+
 	aux = *dir_num1;
 	*dir_num1 = *dir_num2;
-	*dir_num2 = aux;	
+	*dir_num2 = aux;
 }
 
 int hallarMaximo(int *dir_vector, int sizeArray){
 	int max = 0;
-	
+
 	cout << "\nVector numbers:" << endl;
 	for(int i = 0; i < sizeArray; i++){
 		cout << *(dir_vector + i) << " ";
 		// Se accede a la posicion de memoria, aumentando el puntero, ya que el array usa posiciones de memoria contiguas
-		
+
 		if(*(dir_vector + i) > max){
 			max = *(dir_vector + i);
 		}
 	}
-	
+
 	return max;
 }
 

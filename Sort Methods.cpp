@@ -1,7 +1,7 @@
 // Métodos de ordenamiento
 
 #include <iostream>
-#include <conio.h>
+//#include <conio.h>
 
 using namespace std;
 
@@ -246,6 +246,6 @@ int main(){
 	ordenacionShell();
 	quicksort();
 	
-	getch();
+	//getch();
 	return 0;
 }
