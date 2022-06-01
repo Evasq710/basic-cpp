@@ -1,0 +1,5 @@
+# Ejecutables windows
+*.exe
+
+# Ejecutables Linux
+*.o
