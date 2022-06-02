@@ -1,0 +1,4 @@
+Esta es una primera línea ingresada al nuevo archivo.
+Esta es una segunda línea ingresada al nuevo archivo.
+Esta es una tercera línea ingresada al nuevo archivo.
+Esta es una linea agregada al archivo prueba.txt
