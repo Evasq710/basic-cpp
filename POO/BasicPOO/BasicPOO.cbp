@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="./" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -23,6 +24,12 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Curso.cpp" />
+		<Unit filename="Curso.h" />
+		<Unit filename="Estudiante.cpp" />
+		<Unit filename="Estudiante.h" />
+		<Unit filename="Punto.cpp" />
+		<Unit filename="Punto.h" />
 		<Unit filename="main.cpp" />
 		<Extensions />
 	</Project>
