@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1654486939 source:/home/abrava/Escritorio/Cursos Progra/basic-cpp/POO/BasicPOO/Punto.cpp
+	"Punto.h"
+	<iostream>
+
+1654486968 /home/abrava/Escritorio/Cursos Progra/basic-cpp/POO/BasicPOO/Punto.h
+
+1654483245 source:/home/abrava/Escritorio/Cursos Progra/basic-cpp/POO/BasicPOO/main.cpp
+	<iostream>
+	"Punto.h"
+
+1654484948 source:/home/abrava/Escritorio/Cursos Progra/basic-cpp/POO/BasicPOO/Curso.cpp
+	"Curso.h"
+	<iostream>
+
+1654484815 /home/abrava/Escritorio/Cursos Progra/basic-cpp/POO/BasicPOO/Curso.h
+	<iostream>
+
+1654485992 source:/home/abrava/Escritorio/Cursos Progra/basic-cpp/POO/BasicPOO/Estudiante.cpp
+	"Estudiante.h"
+	<iostream>
+
+1654485999 /home/abrava/Escritorio/Cursos Progra/basic-cpp/POO/BasicPOO/Estudiante.h
+	<iostream>
+	"Curso.h"
+
