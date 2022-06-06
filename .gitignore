@@ -3,3 +3,6 @@
 
 # Ejecutables Linux
 *.o
+
+bin
+obj
